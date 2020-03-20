@@ -4,13 +4,11 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.BreedListFragment">
+    tools:context=".vista.BreedListFragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewBreedList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
-
-
 
 </LinearLayout>

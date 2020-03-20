@@ -1,11 +1,7 @@
-package com.criss.perritoapp.api;
+package com.criss.perritoapp.model.api;
 
-import com.criss.perritoapp.model.BreedListResponse;
-
-import retrofit2.Call;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
-import retrofit2.http.GET;
 
 public class RetrofitClient {
 

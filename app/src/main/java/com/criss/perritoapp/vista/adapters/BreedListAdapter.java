@@ -1,17 +1,12 @@
-package com.criss.perritoapp.adapters;
-
+package com.criss.perritoapp.vista.adapters;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.criss.perritoapp.R;
-import com.criss.perritoapp.model.BreedListResponse;
-
 import java.util.List;
 
 public class BreedListAdapter extends RecyclerView.Adapter<BreedListAdapter.ViewHolderList>{
@@ -30,8 +25,6 @@ public class BreedListAdapter extends RecyclerView.Adapter<BreedListAdapter.View
     public ViewHolderList onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.item_dog_list, parent, false);
-
-
         return new ViewHolderList(view);
     }
 
@@ -50,11 +43,8 @@ public class BreedListAdapter extends RecyclerView.Adapter<BreedListAdapter.View
     public int getItemCount() {
         return breedList.size();
     }
-
-
-     class  ViewHolderList extends RecyclerView.ViewHolder {
+    class  ViewHolderList extends RecyclerView.ViewHolder {
         private TextView dogTextView;
-
         public ViewHolderList(@NonNull View itemView) {
             super(itemView);
             dogTextView = itemView.findViewById(R.id.dogTv);
@@ -62,9 +52,7 @@ public class BreedListAdapter extends RecyclerView.Adapter<BreedListAdapter.View
 
     }
 
-
     public interface ItemClick {
         void onClick(String dog);
     }
-
 }

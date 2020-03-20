@@ -1,4 +1,4 @@
-package com.criss.perritoapp.api;
+package com.criss.perritoapp.model.api;
 
 import com.criss.perritoapp.model.BreedImageListResponse;
 import com.criss.perritoapp.model.BreedListResponse;
